@@ -15,7 +15,8 @@ public class AndroidResponses {
     //数据库连接地址
     private static final String URL = "jdbc:mysql://localhost:3306/petchase" + "?serverTimezone=GMT%2B8&useSSL=false";
     //用户名
-    private static final String USER_NAME = "lzz";
+    private static final String USER_NAME = "root";
+//    private static final String USER_NAME = "lzz";   //本地测试的时候用这个用户名
     //密码
     private static final String PASSWORD = "123456";
     public static Statement stmt;

@@ -29,4 +29,11 @@ public class Login {
         }
 //        return obj.getUpass()+"";
     }
+
+    @RequestMapping(value="/loginForWeb")
+    @ResponseBody
+    public String loginForWeb(){
+        return "this is a test page";
+    }
+
 }

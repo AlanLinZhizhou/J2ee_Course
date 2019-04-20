@@ -1,0 +1,64 @@
+Manifest-Version: 1.0
+Class-Path: aspectjweaver-1.9.2.jar validation-api-2.0.1.Final.jar jav
+ ax.transaction-api-1.3.jar jackson-databind-2.9.7.jar tomcat-embed-we
+ bsocket-9.0.13.jar tomcat-embed-core-9.0.13.jar jackson-core-2.9.7.ja
+ r jackson-module-parameter-names-2.9.7.jar javax.activation-api-1.2.0
+ .jar slf4j-api-1.7.25.jar unbescape-1.1.6.RELEASE.jar logback-core-1.
+ 2.3.jar classmate-1.4.0.jar hibernate-core-5.3.7.Final.jar classmate-
+ 1.4.0.jar log4j-api-2.11.1.jar spring-aop-5.1.3.RELEASE.jar spring-we
+ bmvc-5.1.3.RELEASE.jar spring-boot-2.1.1.RELEASE.jar spring-data-jpa-
+ 2.1.3.RELEASE.jar tomcat-embed-el-9.0.13.jar javassist-3.23.1-GA.jar 
+ jackson-datatype-jdk8-2.9.7.jar javax.persistence-api-2.2.jar spring-
+ expression-5.1.3.RELEASE.jar spring-boot-starter-aop-2.1.1.RELEASE.ja
+ r spring-web-5.1.3.RELEASE.jar hibernate-validator-6.0.13.Final.jar j
+ avax.transaction-api-1.3.jar unbescape-1.1.6.RELEASE.jar spring-boot-
+ starter-web-2.1.1.RELEASE.jar jboss-logging-3.3.2.Final.jar spring-bo
+ ot-starter-aop-2.1.1.RELEASE.jar tomcat-embed-websocket-9.0.13.jar ja
+ xb-api-2.3.1.jar spring-boot-starter-json-2.1.1.RELEASE.jar spring-bo
+ ot-starter-jdbc-2.1.1.RELEASE.jar javax.activation-api-1.2.0.jar spri
+ ng-boot-starter-logging-2.1.1.RELEASE.jar spring-data-commons-2.1.3.R
+ ELEASE.jar spring-boot-devtools-2.1.1.RELEASE.jar attoparser-2.0.5.RE
+ LEASE.jar spring-context-5.1.3.RELEASE.jar spring-data-commons-2.1.3.
+ RELEASE.jar spring-jcl-5.1.3.RELEASE.jar spring-boot-2.1.1.RELEASE.ja
+ r thymeleaf-spring5-3.0.11.RELEASE.jar spring-boot-starter-tomcat-2.1
+ .1.RELEASE.jar log4j-to-slf4j-2.11.1.jar spring-beans-5.1.3.RELEASE.j
+ ar spring-context-5.1.3.RELEASE.jar jackson-datatype-jdk8-2.9.7.jar s
+ pring-boot-autoconfigure-2.1.1.RELEASE.jar jul-to-slf4j-1.7.25.jar ja
+ vassist-3.23.1-GA.jar spring-tx-5.1.3.RELEASE.jar log4j-to-slf4j-2.11
+ .1.jar logback-core-1.2.3.jar jackson-datatype-jsr310-2.9.7.jar logba
+ ck-classic-1.2.3.jar spring-boot-starter-web-2.1.1.RELEASE.jar hibern
+ ate-validator-6.0.13.Final.jar jackson-module-parameter-names-2.9.7.j
+ ar log4j-api-2.11.1.jar spring-boot-starter-data-jpa-2.1.1.RELEASE.ja
+ r byte-buddy-1.9.5.jar mysql-connector-java-8.0.12.jar javax.annotati
+ on-api-1.3.2.jar spring-orm-5.1.3.RELEASE.jar dom4j-2.1.1.jar snakeya
+ ml-1.23.jar tomcat-embed-el-9.0.13.jar jandex-2.0.5.Final.jar attopar
+ ser-2.0.5.RELEASE.jar dom4j-2.1.1.jar spring-data-jpa-2.1.3.RELEASE.j
+ ar spring-boot-autoconfigure-2.1.1.RELEASE.jar thymeleaf-3.0.11.RELEA
+ SE.jar spring-boot-starter-thymeleaf-2.1.1.RELEASE.jar spring-boot-st
+ arter-json-2.1.1.RELEASE.jar thymeleaf-extras-java8time-3.0.2.RELEASE
+ .jar spring-expression-5.1.3.RELEASE.jar logback-classic-1.2.3.jar ja
+ ckson-databind-2.9.7.jar spring-jcl-5.1.3.RELEASE.jar hibernate-commo
+ ns-annotations-5.0.4.Final.jar mysql-connector-java-8.0.13.jar spring
+ -jdbc-5.1.3.RELEASE.jar aspectjweaver-1.9.2.jar spring-orm-5.1.3.RELE
+ ASE.jar spring-boot-starter-data-jpa-2.1.1.RELEASE.jar thymeleaf-3.0.
+ 11.RELEASE.jar spring-aspects-5.1.3.RELEASE.jar spring-aspects-5.1.3.
+ RELEASE.jar jackson-annotations-2.9.0.jar jul-to-slf4j-1.7.25.jar tom
+ cat-embed-core-9.0.13.jar jackson-annotations-2.9.0.jar jackson-core-
+ 2.9.7.jar javax.persistence-api-2.2.jar spring-core-5.1.3.RELEASE.jar
+  hibernate-commons-annotations-5.0.4.Final.jar spring-web-5.1.3.RELEA
+ SE.jar jaxb-api-2.3.1.jar antlr-2.7.7.jar thymeleaf-spring5-3.0.11.RE
+ LEASE.jar antlr-2.7.7.jar spring-core-5.1.3.RELEASE.jar slf4j-api-1.7
+ .25.jar spring-boot-starter-2.1.1.RELEASE.jar javax.annotation-api-1.
+ 3.2.jar thymeleaf-extras-java8time-3.0.2.RELEASE.jar spring-boot-star
+ ter-2.1.1.RELEASE.jar byte-buddy-1.9.5.jar spring-tx-5.1.3.RELEASE.ja
+ r hibernate-core-5.3.7.Final.jar jboss-logging-3.3.2.Final.jar mysql-
+ connector-java-8.0.13.jar spring-boot-starter-tomcat-2.1.1.RELEASE.ja
+ r HikariCP-3.2.0.jar HikariCP-3.2.0.jar spring-beans-5.1.3.RELEASE.ja
+ r spring-jdbc-5.1.3.RELEASE.jar spring-boot-devtools-2.1.1.RELEASE.ja
+ r spring-webmvc-5.1.3.RELEASE.jar snakeyaml-1.23.jar spring-aop-5.1.3
+ .RELEASE.jar spring-boot-starter-jdbc-2.1.1.RELEASE.jar validation-ap
+ i-2.0.1.Final.jar spring-boot-starter-logging-2.1.1.RELEASE.jar jacks
+ on-datatype-jsr310-2.9.7.jar jandex-2.0.5.Final.jar spring-boot-start
+ er-thymeleaf-2.1.1.RELEASE.jar
+Main-Class: com.qingguatang.petchase_12_3.Petchase123Application
+
