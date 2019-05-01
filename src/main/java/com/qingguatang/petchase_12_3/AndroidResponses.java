@@ -72,7 +72,9 @@ public class AndroidResponses {
             //结果集
             ResultSet rs = prst.executeQuery();
             while (rs.next()) {
-                return rs.getString("econtent");
+                String temp=rs.getString("econtent");
+                String temp2=new String(temp.getBytes(),"UTF-8");
+                return temp2;
             }
             rs.close();
             prst.close();

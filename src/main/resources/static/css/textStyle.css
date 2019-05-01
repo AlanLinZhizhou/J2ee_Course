@@ -1,0 +1,23 @@
+.txtMainPage{
+    position:absolute;
+    color:#fff;
+    top: 0px;
+    font-family:Impact;
+    font-size:180px;
+    z-index: 99;
+    display:inline;
+    font-weight:bolder;
+}
+#beiAn{
+    padding-bottom: 6px;
+    height: 16px;
+    line-height: 16px;
+    z-index: 99;
+    position: absolute;
+    top: 95%;
+}
+#beiAnTxt{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+}

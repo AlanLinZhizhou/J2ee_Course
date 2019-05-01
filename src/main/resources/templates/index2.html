@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8" class="fp-enabled" style="overflow: hidden;height: 100%">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>宠物之家</title>
+    <!--默认样式-->
+    <link rel="stylesheet" href="../static/css/reset.css">
+
+    <!--响应式框架-->
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css">
+
+    <!--css3动画库-->
+    <link rel="stylesheet" href="../static/css/animate.css">
+
+    <!--banner大图基础样式-->
+    <link rel="stylesheet" href="../static/css/slick.css">
+
+    <!--页面滚动基础样式-->
+    <link rel="stylesheet" href="../static/css/jquery.fullPage.css"/>
+
+    <!--导航样式-->
+    <link rel="stylesheet" href="../static/css/head.css"/>
+
+    <!--图片和滚屏样式-->
+    <link rel="stylesheet" href="../static/css/index.css">
+
+    <link rel="shortcut icon" href="../static/image/icon_426.ico">
+
+    <!--视频播放-->
+    <script src="../static/video/js/modernizr.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="../static/video/css/normalize.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="../static/video/css/font-awesome.min.css">-->
+    <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/video/css/style.css">
+
+    <!--page4的css特效-->
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap-grid.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/htmleaf-demo.css">
+
+    <!--page3的css样式-->
+    <!--主要样式-->
+    <link rel="stylesheet" type="text/css" href="../static/page3/css/style.css" />
+    <!--图标样式-->
+    <link rel="stylesheet" type="text/css" href="../static/page3/css/icon.css" />
+    <style type="text/css">
+        .demo {
+            background: #ecedef;
+            padding: 1.5em 0;
+        }
+
+        .pricingTable {
+            text-align: center;
+            background: #fff;
+            padding: 30px 0;
+        }
+
+        .pricingTable .title {
+            font-size: 22px;
+            font-weight: 600;
+            color: #2e282a;
+            text-transform: uppercase;
+            margin: 0 0 30px 0;
+        }
+
+        .pricingTable .price-value {
+            padding: 30px 0;
+            background: #13B4F0;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .pricingTable .price-value:before {
+            content: "";
+            border-top: 15px solid #fff;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            position: absolute;
+            top: 0;
+            left: 46%;
+
+        }
+
+        .pricingTable .month {
+            display: block;
+            font-size: 35px;
+            font-weight: 900;
+            color: #fff;
+            /*text-transform: uppercase;*/
+            font-family: Impact,serif;
+
+        }
+
+        .pricingTable .amount {
+            display: inline-block;
+            font-size: 30px;
+            color: #fff;
+            position: relative;
+            font-family: Impact,serif;
+        }
+
+        .pricingTable .currency {
+            position: absolute;
+            top: -1px;
+            left: -35px;
+        }
+
+        .pricingTable .value {
+            font-size: 20px;
+            position: absolute;
+            top: 21px;
+            right: -27px;
+        }
+
+        .pricingTable .pricing-content {
+            padding: 0;
+            margin: 0 0 30px 0;
+            list-style: none;
+        }
+
+        .pricingTable .pricing-content li {
+            font-size: 16px;
+            color: #868686;
+            line-height: 35px;
+        }
+
+        .pricingTable .pricingTable-signup {
+            display: inline-block;
+            padding: 8px 40px;
+            background: #fca4a7;
+            font-size: 15px;
+            font-weight: 600;
+            color: #fff;
+            text-transform: capitalize;
+            border: 2px solid #fca4a7;
+            border-radius: 30px;
+            transition: all 0.5s ease 0s;
+        }
+
+        .pricingTable .pricingTable-signup:hover {
+            background: #fff;
+            color: #fca4a7;
+        }
+
+        @media only screen and (max-width: 990px) {
+            .pricingTable {
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+<body class="fp-viewing-hero" style="overflow: hidden;height: 100%">
+<!-- 导航 -->
+<header class="header">
+    <div class="container clearfix">
+        <div class="fl left">
+            <a href="javascript:void(0)"><img src="../static/image/logo.png" alt="" class="img1"/></a>
+            <a href="javascript:void(0)"><img src="../static/image/logo2.jpg" alt="" class="img2"/></a>
+        </div>
+        <div class="fr nav">
+            <ul class="navbar_nav" data-in="fadeInDown" data-out="fadeOutUp">
+                <li class="active">
+                    <a href="javascript:void(0)">首页</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">
+                        项圈购买 </a>
+                    <div class="dropdown_menu">
+                        <a href="#">宠物猫(制作中)</a>
+                        <a href="#">宠物狗(制作中)</a>
+                        <a href="#">其他(制作中)</a></div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">技术支持</a>
+                    <div class="dropdown_menu">
+                        <a href="https://lbs.amap.com/">高德</a>
+                        <a href="http://www.hizyf.com/">智云服平台</a>
+                        <a href="https://www.aliyun.com/">阿里云平台</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">APP下载(审核中)</a>
+
+                </li>
+                <li>
+                    <a href="http://lzzpros.cn:80/AboutUs">关于我们</a></li>
+                <li>
+                    <a href="http://lzzpros.cn:80/AboutUs">联系合作</a></li>
+            </ul>
+        </div>
+        <a href="javascript:void(0)" id="navToggle">
+            <span></span>
+        </a>
+    </div>
+</header>
+<!--移动端的导航-->
+<div class="m_nav">
+    <div class="top clearfix">
+        <img src="../static/image/closed.png" alt="" class="closed"/>
+    </div>
+    <div class="logo">
+        <img src="../static/image/logo2.jpg" alt=""/>
+    </div>
+    <ul class="ul" data-in="fadeInDown" data-out="fadeOutUp">
+        <li class="active">
+            <a href="javascript:void(0)">首页</a>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:void(0)">
+                项圈购买
+            </a>
+            <div class="dropdown_menu">
+                <a href="#">宠物猫(制作中)</a>
+                <a href="#">宠物狗(制作中)</a>
+                <a href="#">其他(制作中)</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="javascript:void(0)">技术支持</a>
+            <div class="dropdown_menu">
+                <a href="https://lbs.amap.com/">高德</a>
+                <a href="http://www.hizyf.com/">智云服平台</a>
+                <a href="https://www.aliyun.com/">阿里云平台</a>
+            </div>
+        </li>
+        <li>
+            <a href="http://lzzpros.cn:80/index2#three">APP下载(审核中)</a>
+
+        </li>
+        <li>
+            <a href="http://lzzpros.cn:80/AboutUs">关于我们</a>
+        </li>
+        <li>
+            <a href="http://lzzpros.cn:80/AboutUs">联系合作</a>
+        </li>
+    </ul>
+</div>
+<!-- 内容 -->
+<div id="index_main" class="index_main">
+    <!--导航-->
+    <div class="section section1">
+        <div class="index_banner">
+            <div class="item">
+                <div class="items scaleBg" style="background-image: url(../static/image/banner1.jpg);"></div>
+                <div class="inner">
+                    <div class="block_txt">
+                        <h4> WELCOME HOME</h4>
+                        <h2>让<span>丢失的爱宠</span>不再流浪</h2>
+                        <h3>宠物之家——宠物在线追踪平台</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="items scaleBg" style="background-image: url(../static/image/2.jpg);"></div>
+                <div class="inner">
+                    <div class="block_txt">
+                        <h4> Goodliness,to be continued</h4>
+                        <h2>让<span>美好持续</span>发生</h2>
+                        <h3>我们有让美好持续发生的愿望，更有让美好持续发生的能力</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="items scaleBg" style="background-image: url(../static/image/banner2.jpg);"></div>
+                <div class="inner">
+                    <div class="block_txt">
+                        <h4></h4>
+                        <h2><span>科普学堂</span><br>新时代养宠百科全书</h2>
+                        <h3>安全养宠 | 健康养宠 | 科学养宠 | 轻松养宠</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="items scaleBg" style="background-image: url(../static/image/banner3.jpg);"></div>
+                <div class="inner">
+                    <div class="block_txt">
+                        <h4></h4>
+                        <h2>疫苗阶段性规划解决方案</h2>
+                        <h3>全程支持 | 个性服务</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="items scaleBg" style="background-image: url(../static/image/banner4.jpg);"></div>
+                <div class="inner">
+                    <div class="block_txt">
+                        <h4></h4>
+                        <h2>寻宠启示发布平台</h2>
+                        <h3>双重保障 | 实时发布 | 即刻交互</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="left slick_txt">
+            <div class="prev slick_arrow"></div>
+        </div>
+        <div class="right slick_txt">
+            <div class="next slick_arrow"></div>
+        </div>
+        <div class="number">
+            <div class="inner clearfix">
+                <span class="active">01</span>
+                <span>02</span>
+                <span>03</span>
+                <span>04</span>
+                <span>05</span>
+            </div>
+        </div>
+    </div>
+    <div class="section section2">
+        <h1 style="text-align: center;color: #46b8da;font-weight: bold">Demo展示</h1>
+        <div class="container">
+            <div class="wrapper">
+
+                <div class="js-video">
+                    <video class="js-media" poster="../static/video/a.png">
+                        <source src="../static/video/lzz319.mp4" type="video/mp4"/>
+                        <p>你的浏览器不支持 HTML5 Video,使用chrome浏览器可正常播放哦</p>
+                    </video>
+                    <i data-playPause class="playPause fa fa-play ui-icon"><span></span></i>
+                    <div class="ui">
+                        <div>
+                            <div data-progress class="progress">
+                                <div data-buffer class="progress-buffer"></div>
+                                <div data-time class="progress-time"></div>
+                            </div><!-- progress -->
+                        </div>
+                        <div>
+                            <span class="timeDisplay"><i data-currentTime>0:00</i> / <i data-duration>0:00</i></span>
+                        </div>
+                        <div>
+                            <i data-mute class="fa fa-volume-up ui-icon"></i>
+                        </div>
+                        <div>
+                            <div data-volume="100" class="volumeControl"><span class="ui-slider-handle"></span></div>
+                        </div>
+                    </div><!-- ui -->
+                    <i data-fullscreen class="fullscreen iconicfill-fullscreen" title="fullscreen"></i>
+                </div><!-- js-video -->
+
+            </div>
+        </div>
+        <script src="../static/video/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+        <script src="../static/video/js/vedio.js"></script>
+    </div>
+
+    <div class="section section3">
+        <div class="container">
+
+            <!--<div class="section-title">-->
+                <!--<h1>宠物之家</h1>-->
+                <!--<h2>实时导航、科普学堂、疫苗规划，给您最贴心的服务</h2>-->
+            <!--</div>-->
+            <div class="section-wrapper">
+                <div class="news-body">
+                    <div class="news-main">
+                        <a class="news-main-card" href="#" style="text-decoration: none">
+                            <div class="news-main-card-bg" style="background-image: url(../static/page3/image/homepage-news-img.jpg)"></div>
+                            <div class="news-main-card-bg news-main-card-bg-mb" style="background-image: url(../static/page3/image/temp/a2.jpg)"></div>
+                            <div class="news-main-card-top">
+                                <div class="news-play-btn">
+                                    <span class="cui-icon cui-icon-play"></span>
+                                </div>
+                            </div>
+                            <div class="news-main-card-bottom">
+                                <!--<h2 class="h2" style="color: #000000">【直播】技术小白如何花2小时搭建一个精美网站</h2>-->
+                                <!--<p class="p" style="color: #000000">云速建站服务，无需代码，自由拖拽，并可提供PC 、手机 、微信网站 、小程序 、 APP五站合一的模板建站产品。</p>-->
+                                <!--<div class="sub-p sub-p-date" style="color: #000000">3月14日 16:00-18:00</div>-->
+                                <!--<div class="sub-p sub-p-author" style="color: #000000">云主机建站大牛</div>-->
+                                <div class="btn-group">
+                                    <!--<span class="cui-btn cui-btn-small cui-btn-outline-light"><span class="cui-icon cui-icon-play"></span><span><a href="http://lzzpros.cn:80/index2#one" style="color: #2be4dc">观看视频</a></span></span>-->
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news-sub">
+
+                        <ul class="news-list-v show">
+
+                            <li>
+                                <a href="#" class="news-list-card" style="text-decoration: none">
+                                    <h3 class="h3">众里寻它千百度</h3>
+                                    <p class="p">宠物之家，带走千百度的忧虑，带来蓦然回首的温情</p>
+                                    <span class="more">查看详情<i class="cui-icon cui-icon-more"></i></span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="news-list-card" style="text-decoration: none">
+                                    <!--<h3 class="h3">由Spring应用的瑕疵谈谈DDD的概念与应用</h3>-->
+                                    <!--<p class="p">多数有经验的程序开发者都应该听说过DDD，并且尝试过将其应用在自己的项目中。不知你是否遇到过这样的场景。</p>-->
+                                    <!--<span class="more">查看详情<i class="cui-icon cui-icon-more"></i></span>-->
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="news-list-card" style="text-decoration: none">
+                                    <h3 class="h3">宠物的一辈子</h3>
+                                    <p class="p">在你领养宠物的那一刻，你就成了它的全世界</p>
+                                    <span class="more">查看详情<i class="cui-icon cui-icon-more"></i></span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="news-list-card" style="text-decoration: none">
+                                    <h3 class="h3">小科普学堂——健康科学养宠</h3>
+                                    <p class="p">更加科学的养宠，保护主人和宠物的健康，免去无妄之灾</p>
+                                    <span class="more">查看详情<i class="cui-icon cui-icon-more"></i></span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="news-list-card" style="text-decoration: none">
+                                    <h3 class="h3">操作简便</h3>
+                                    <p class="p">只需要一款智能手机，一款app，简单几步操作便可即刻寻宠</p>
+                                    <span class="more">查看详情<i class="cui-icon cui-icon-more"></i></span>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                        <ul class="news-list-v">
+
+                            <li>
+                                <a href="#" class="news-list-card" style="text-decoration: none">
+                                    <h3 class="h3">带着canvas去流浪系列之一：绘制柱状图</h3>
+                                    <p class="p">学习使用canvasAPI来实现数据可视化。</p>
+                                    <span class="more">查看详情<i class="cui-icon cui-icon-more"></i></span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="news-list-card" style="text-decoration: none">
+                                    <h3 class="h3">云主机社区2月刊：如何选云主机的规格？</h3>
+                                    <p class="p">云主机社区月刊，每月更新一刊，欢迎大家品读。</p>
+                                    <span class="more">查看详情<i class="cui-icon cui-icon-more"></i></span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="news-list-card" style="text-decoration: none">
+                                    <h3 class="h3">7天晋级机器学习：助力客户分群实验小结</h3>
+                                    <p class="p">轻松玩转机器学习，机器学习助力客户分群学习分享。</p>
+                                    <span class="more">查看详情<i class="cui-icon cui-icon-more"></i></span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="news-list-card" style="text-decoration: none">
+                                    <h3 class="h3">云图说：四大业务场景带您玩转云主机SAP</h3>
+                                    <p class="p">一张图概览云主机SAP解决方案四大业务场景。</p>
+                                    <span class="more">查看详情<i class="cui-icon cui-icon-more"></i></span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="news-list-card" style="text-decoration: none">
+                                    <h3 class="h3">安全攻击一目了然，云主机态势感知服务正式发布</h3>
+                                    <p class="p">安全态势尽收眼底，攻击面前洞若观火。</p>
+                                    <span class="more">查看详情<i class="cui-icon cui-icon-more"></i></span>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                        <ul class="news-list-v">
+
+                            <li>
+                                <a href="#" class="news-list-card" style="text-decoration: none">
+                                    <h3 class="h3">云主机发布国内首个AI模型市场</h3>
+                                    <p class="p">云主机正式发布云主机AI市场，投入专项激励，助力开发者、合作伙伴加速AI应用落地。</p>
+                                    <span class="more">查看详情<i class="cui-icon cui-icon-more"></i></span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="news-list-card" style="text-decoration: none">
+                                    <h3 class="h3">Python 爬虫之Scrapy入门实践指南</h3>
+                                    <p class="p">Scrapy是一种快速的高级Web爬行和Web抓取框架，用于抓取网站并从其页面中提取结构化数据。它可用于各种用途，从数据挖掘到监控和自动化测试。</p>
+                                    <span class="more">查看详情<i class="cui-icon cui-icon-more"></i></span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="news-list-card" style="text-decoration: none">
+                                    <h3 class="h3">云主机ModelArts拿下斯坦福DAWNBench双料冠军</h3>
+                                    <p class="p">云主机ModelArts一站式AI开发平台将模型训练时间大幅缩减的同时实现了超强推理性能。</p>
+                                    <span class="more">查看详情<i class="cui-icon cui-icon-more"></i></span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="news-list-card" style="text-decoration: none">
+                                    <h3 class="h3">DevCloud新手课堂之两步学会使用代码检查</h3>
+                                    <p class="p">DevCloud新手课堂本期导读：如何使用代码检查服务。</p>
+                                    <span class="more">查看详情<i class="cui-icon cui-icon-more"></i></span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="news-list-card" style="text-decoration: none">
+                                    <h3 class="h3">《跟唐老师学习云网络》 - ip命令</h3>
+                                    <p class="p">ip命令作为Linux网络控制的魔法棒，是未来遨游云网络的必备命令行工具。</p>
+                                    <span class="more">查看详情<i class="cui-icon cui-icon-more"></i></span>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <!--<div class="section-bottom">-->
+                <!--<div class="section-more-wrap">-->
+                    <!--<a class="news-more" href="#">-->
+                        <!--<span>更多新鲜动态</span><i class="cui-icon cui-icon-more"></i>-->
+                    <!--</a>-->
+                    <!--<a class="news-change">-->
+                        <!--<span>换一换</span>-->
+                    <!--</a>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+        <script src="statics/js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+            //换一换
+            var $newsLists = $('.news-sub').find('.news-list-v');
+
+            function changeNews() {
+                var $currentNews = $newsLists.filter('.show');
+                var $nextNews = $currentNews.next();
+
+                if($nextNews.length === 0) {
+                    $nextNews = $newsLists.eq(0);
+                }
+
+                $newsLists.removeClass('show');
+                $nextNews.addClass('show');
+            }
+            $('.news-change').on('click', function() {
+                changeNews();
+            });
+        </script>
+    </div>
+    <div class="section section4">
+        <div class="container">
+            <div class="demo">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="pricingTable">
+                                <h3 class="title">应用介绍</h3>
+                                <div class="price-value">
+                                    <span class="month">宠物之家</span>
+                                    <span class="amount">寻宠平台
+								<span class="currency"></span>
+                                        <!--寻宠平台-->
+								<span class="value"></span>
+							        </span>
+                                </div>
+                                <ul class="pricing-content">
+                                    <li>我们帮助寻找丢失宠物</li>
+                                    <li>为您提供最便捷</li>
+                                    <li>最高效的导航</li>
+                                    <li>为您寻回爱宠</li>
+                                    <li>为爱宠打造温馨的家</li>
+                                </ul>
+                                <a href="#" class="pricingTable-signup">了解更多</a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="pricingTable">
+                                <h3 class="title">应用下载</h3>
+                                <div class="price-value">
+                                    <span class="month">安卓平台-即将上线</span>
+                                    <span class="amount">
+								<span class="currency"></span>
+								应用市场审核中
+								<span class="value"></span>
+							</span>
+                                </div>
+                                <ul class="pricing-content">
+                                    <li>二维码区域</li>
+                                    <li>二维码区域</li>
+                                    <li>二维码区域</li>
+                                    <li>二维码区域</li>
+                                    <li>百度应用市场</li>
+                                </ul>
+                                <a href="#" class="pricingTable-signup">点击下载</a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="pricingTable">
+                                <h3 class="title">应用指南</h3>
+                                <div class="price-value">
+                                    <span class="month">使用简介</span>
+                                    <span class="amount">
+								<span class="currency"></span>
+                                便捷上手
+								<span class="value"></span>
+							</span>
+                                </div>
+                                <ul class="pricing-content">
+                                    <li>1.注册登陆宠物之家</li>
+                                    <li>2.点击项圈绑定按钮</li>
+                                    <li>3.输入项圈sn号</li>
+                                    <li>4.点击导航按钮</li>
+                                    <li>5.开始导航寻宠</li>
+                                </ul>
+                                <a href="#" class="pricingTable-signup">开始体验</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../static/js/jquery.min.js"></script>
+<script src="../static/js/jquery.fullPage.min.js"></script>
+<script src="../static/js/index_slick.js"></script>
+<script src="../static/js/temp/index.js"></script>
+
+</body>
+</html>
