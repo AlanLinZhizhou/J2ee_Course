@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 
+import java.nio.charset.StandardCharsets;
 import java.sql.*;
 
 @Controller
@@ -52,7 +53,7 @@ public class AndroidResponses {
         return "NOTOK";
     }
 
-    @RequestMapping("/Serverlet/hello")
+    @RequestMapping(value = "/Serverlet/hello",produces = "application/json;charset=utf-8")
     @ResponseBody
     public String helloServerlet(@RequestParam(name = "id", required = true) String id) {
         operate_essays(id);
@@ -73,7 +74,9 @@ public class AndroidResponses {
             ResultSet rs = prst.executeQuery();
             while (rs.next()) {
                 String temp=rs.getString("econtent");
-                String temp2=new String(temp.getBytes(),"UTF-8");
+                String temp2=new String(temp.getBytes(), StandardCharsets.UTF_8);
+                System.out.println(temp2.getBytes());
+                System.out.println(temp2);
                 return temp2;
             }
             rs.close();
