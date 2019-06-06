@@ -298,9 +298,9 @@
 }
 
 @keyframes bounceIn {
-  // from, 20%, 40%, 60%, 80%, to {
-  //   animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-  // }
+  /*// from, 20%, 40%, 60%, 80%, to {*/
+  /*//   animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);*/
+  /*// }*/
 
   from, 50%, to {
     animation-timing-function: ease-out;
@@ -311,27 +311,27 @@
     transform: scale3d(0, 0, 0);
   }
 
-  // 20% {
-  //   transform: scale3d(1.1, 1.1, 1.1);
-  // }
+  /*// 20% {*/
+  /*//   transform: scale3d(1.1, 1.1, 1.1);*/
+  /*// }*/
 
-  // 40% {
-  //   transform: scale3d(.9, .9, .9);
-  // }
+  /*// 40% {*/
+  /*//   transform: scale3d(.9, .9, .9);*/
+  /*// }*/
 
-  // 50% {
-  //   opacity: .5;
-  //   transform: scale3d(.5, .5, .5);
-  // }
+  /*// 50% {*/
+  /*//   opacity: .5;*/
+  /*//   transform: scale3d(.5, .5, .5);*/
+  /*// }*/
 
-  // 60% {
-  //   opacity: 1;
-  //   transform: scale3d(1.03, 1.03, 1.03);
-  // }
+  /*// 60% {*/
+  /*//   opacity: 1;*/
+  /*//   transform: scale3d(1.03, 1.03, 1.03);*/
+  /*// }*/
 
-  // 80% {
-  //   transform: scale3d(.97, .97, .97);
-  // }
+  /*// 80% {*/
+  /*//   transform: scale3d(.97, .97, .97);*/
+  /*// }*/
 
   to {
     opacity: 1;
