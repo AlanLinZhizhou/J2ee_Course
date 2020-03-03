@@ -10,14 +10,29 @@
 }
 #beiAn{
     padding-bottom: 6px;
+    padding-left: 45%;
     height: 16px;
     line-height: 16px;
     z-index: 99;
     position: absolute;
     top: 95%;
+    alignment: center;
+}
+#beiAn2{
+    padding-bottom: 6px;
+    padding-left: 45%;
+    height: 16px;
+    line-height: 16px;
+    z-index: 99;
+    position: absolute;
+    top: 96%;
+    alignment: center;
 }
 #beiAnTxt{
     text-decoration: none;
     color: #ffffff;
     font-size: 16px;
+    text-align: center;
+
+
 }
